@@ -26,9 +26,16 @@ npm run dev
 Then login using foloowing,
 
 Email:demoadmin123@gmail.com
+
 Password:demoadmin@123
 
+if image not visible run,
+
+php artisan storage:link
 
 ## Screenshots for Refference
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+![image](https://github.com/Vignesh-GitHubreposy/Laravel10CRUD/assets/34505484/0e7fa4d6-fee0-43b1-a0f4-53e72d75e859)
+
+![image](https://github.com/Vignesh-GitHubreposy/Laravel10CRUD/assets/34505484/43dfa19b-3ef6-4369-bc32-51cbfc4625af)
+
