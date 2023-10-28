@@ -39,3 +39,4 @@ php artisan storage:link
 
 ![image](https://github.com/Vignesh-GitHubreposy/Laravel10CRUD/assets/34505484/43dfa19b-3ef6-4369-bc32-51cbfc4625af)
 
+![image](https://github.com/Vignesh-GitHubreposy/Laravel10CRUD/assets/34505484/404c88d5-1913-4143-876f-60a89651964a)
