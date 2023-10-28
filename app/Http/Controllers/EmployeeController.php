@@ -41,7 +41,7 @@ class EmployeeController extends Controller
         $img_file = $request->file('emp_photo');
         $extension = $img_file->extension();
         $name =  $img_file->hashName();
-            $filename = $name . '.' . $extension;
+            $filename = $name;
         // $filename = md5(time()) . '.' . $extension;
         $path = $img_file->storeAs('public/profile', $filename);
         $stored = Employee::create([
@@ -55,7 +55,7 @@ class EmployeeController extends Controller
             'emp_photo' => $filename,
         ]);
         //dd($request,$path,$store);
-        if($stored>0){
+        if($stored){
             session()->flash('status', 'New Employee Added successfully!');
         }else{
             session()->flash('error', 'New Employee Added successfully!');
@@ -97,7 +97,7 @@ class EmployeeController extends Controller
             $extension = $img_file->extension();
             // dd($extension);
             $name =  $img_file->hashName();
-            $filename = $name . '.' . $extension;
+            $filename = $name;
             $path = $img_file->storeAs('public/profile', $filename);
             $file = $filename;
             Storage::delete($request->prev_image);
@@ -114,7 +114,7 @@ class EmployeeController extends Controller
             'emp_doj' => $request->emp_doj,
             'emp_photo' => $file,
         ]);
-        if ($updated>0) {
+        if ($updated) {
             session()->flash('status', 'Updation successful!');
         } else {
             session()->flash('error', 'Updation Failed!');
